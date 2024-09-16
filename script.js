@@ -4,7 +4,7 @@ const text = document.querySelector('.errorText');
 
 const verifyEmail = () => {
     let patternOne = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if(input.value === "") {
+    if(input.value === "" || !patternOne.test(input.value)) {
         text.textContent = `Please enter a valid email.`
         text.style.border = "2px solid black";
         return false;
