@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  width: 100%;
+  font-family: Roboto;
+  font-size: 3rem;
+}
+
+.heading {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading .heading-one {
+  font-size: 2.5rem;
+  font-family: roboto;
+  color: hsl(354, 100%, 66%);
+  font-weight: 400;
+  text-align: center;
+}
+
+.heading-one span {
+  font-weight: 700;
+  color: black;
+}
+
+.heading-two {
+  font-weight: 300;
+  color: black;
+}
+
+.heading .heading-two {
+  font-size: 1.5rem;
+  font-family: roboto;
+}
+
+.email-container {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.email-container input {
+  height: 40%;
+  width: 70%;
+  border-radius: 30px;
+  border: 2px solid hsl(223, 100%, 88%);
+  outline: none;
+  font-size: 1rem;
+  padding: 1rem;
+  font-family: roboto;
+}
+
+.email-container button {
+  height: 60%;
+  width: 25%;
+  border: none;
+  background-color: hsl(223, 87%, 63%);
+  font-size: 1.1rem;
+  font-family: roboto;
+  color: white;
+  font-weight: 500;
+  border-radius: 30px;
+}
+
+.background-image {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: brown;
+}
+
+.background-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Icons styling */
+.icons-container {
+  height: 10%;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+ul li a img {
+  height: 100%;
+  margin-left: 1rem;
+}
+
+.errorText {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 350px) and (max-width: 750px) {
+  .form {
+    height: 100%;
+    width: 95%;
+  }
+
+  .email-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .email-container input {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .email-container button {
+    height: 40%;
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .background-image {
+    height: 30%;
+  }
+}
+
+.errorText {
+  width: 100%;
+  text-align: start;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
